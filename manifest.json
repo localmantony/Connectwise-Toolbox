@@ -3,12 +3,7 @@
   "name": "ConnectWise Toolbox",
   "version": "1.1",
   "description": "Various enhancements for ConnectWise",
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "storage",
-    "scripting"
-  ],
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["https://na.myconnectwise.net/*"],

@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Save the refresh time to storage when the refresh form is submitted
   refreshForm.addEventListener('submit', function (event) {
       event.preventDefault();
-      const refreshTime = refreshInput.value;
+      const refreshTime = parseFloat(refreshInput.value); // Ensure fractional values are handled
       chrome.storage.sync.set({ refreshTime: refreshTime }, function () {
           console.log('Refresh time saved:', refreshTime);
           displayRefresh.textContent = refreshTime + " minutes";
