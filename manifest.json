@@ -6,11 +6,11 @@
   "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["https://na.myconnectwise.net/*"],
+      "matches": ["https://*.myconnectwise.net/*"],
       "js": ["Manage/content/TimeEntry.js"]
     },
     {
-      "matches": ["https://absne.hostedrmm.com/automate/*"],
+      "matches": ["https://*.hostedrmm.com/automate/*"],
       "js": ["Automate/content/AutoRefresh.js"]
     }
   ],

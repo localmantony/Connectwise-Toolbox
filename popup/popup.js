@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
           refreshInput.value = result.refreshTime;
           displayRefresh.textContent = result.refreshTime + " minutes";
       } else {
-          displayRefresh.textContent = "No refresh time set";
+          displayRefresh.textContent = "10 minutes (default)";
       }
   });
 
